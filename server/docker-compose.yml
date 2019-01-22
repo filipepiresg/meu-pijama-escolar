@@ -1,15 +1,15 @@
 version: "3"
 
 services:
-  webapp:
+  server:
     container_name: node_mongo
     build: .
     command: npm start
     restart: always
     ports:
-      - 80:3000
+      - 3001:3001
     volumes:
-      - .:/usr/app
+      - .:/usr/src/server
     links:
       - mongo
   mongo:
