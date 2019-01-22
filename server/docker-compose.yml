@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  webapp:
+    container_name: node_mongo
+    build: .
+    command: npm start
+    restart: always
+    ports:
+      - 80:3000
+    volumes:
+      - .:/usr/app
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    container_name: mongodb
+    # restart: always
+    # command: mongod --auth
+    ports:
+      - 27017:27017
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: password

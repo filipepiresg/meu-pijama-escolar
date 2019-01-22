@@ -1,0 +1,36 @@
+{
+  "name": "meu-pijama-escolar",
+  "version": "1.0.0",
+  "description": "server em expressJs utilizando container em docker e autenticacao em JWT ",
+  "repository": "https://github.com/filipepiresg/meu-pijama-escolar",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docker",
+    "node",
+    "expressJS",
+    "mongodb",
+    "JWT"
+  ],
+  "author": "Filipe Pires",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.9"
+  }
+}
