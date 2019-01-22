@@ -1,6 +1,6 @@
-FROM node:alpine
-RUN mkdir -p /usr/src/server
-WORKDIR /usr/src/server
+FROM node:current-alpine
+RUN mkdir -p /usr/src/meu-pijama/server
+WORKDIR /usr/src/meu-pijama/server
 COPY package*.json ./
 RUN npm install
 COPY . .
